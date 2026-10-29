@@ -185,6 +185,47 @@
     box.addEventListener("click", hide);
   }
 
+  /* ---------- home page popup: shown on every visit, after the loading screen ---------- */
+  function promo() {
+    var box = document.getElementById("promo");
+    if (!box) return;
+    var closers = box.querySelectorAll("[data-promo-close]");
+    var shown = false;
+    function close() {
+      box.classList.remove("open");
+      document.documentElement.classList.remove("promo-lock");
+      document.removeEventListener("keydown", onKey);
+      setTimeout(function () { box.hidden = true; }, 250);
+    }
+    function onKey(e) {
+      if (e.key === "Escape") return close();
+      if (e.key !== "Tab") return;
+      var f = box.querySelectorAll("a[href], button");
+      if (!f.length) return;
+      var first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+    function open() {
+      if (shown) return;
+      shown = true;
+      box.hidden = false;
+      document.documentElement.classList.add("promo-lock");
+      requestAnimationFrame(function () { requestAnimationFrame(function () { box.classList.add("open"); }); });
+      document.addEventListener("keydown", onKey);
+      var x = box.querySelector(".promo-x");
+      if (x) x.focus();
+    }
+    closers.forEach(function (b) { b.addEventListener("click", close); });
+    box.addEventListener("click", function (e) { if (e.target === box) close(); });
+    // wait for the loading screen if it is still up, then show
+    var waited = 0;
+    (function check() {
+      if (document.getElementById("loader") && waited < 9000) { waited += 200; return setTimeout(check, 200); }
+      setTimeout(open, 500);
+    })();
+  }
+
   /* ---------- warehouse video: removed if the file cannot be played ---------- */
   function video() {
     document.querySelectorAll("[data-video]").forEach(function (band) {
@@ -320,6 +361,7 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     loader();
+    promo();
     video();
     menu();
     reveal();
