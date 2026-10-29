@@ -741,63 +741,7 @@ html.no-loader .loader { display: none; }
 .video-band.pack-video { padding: 0; }
 .pack-media:has([data-video]) .media-fallback { display: none; }
 
-/* =====================================================================
-   THEME: NAVY PRIMARY  (navy #0D1C42, cream #FCF9EA, gold #B8892D)
-   Navy is the page color, cream is text, gold is the accent.
-   ===================================================================== */
-:root {
-  --ink: #fcf9ea;
-  --ink-2: #e8e2c8;
-  --ink-soft: #b4bbd0;
-  --paper: #0d1c42;
-  --paper-2: #13285d;
-  --white: #14295e;
-  --line: #2b3e72;
-  --err: #ff8a80;
-  --ok: #7fd1a0;
-}
-.site-header { background: rgba(13, 28, 66, .94); }
-.topbar { background: #b8892d; color: #0d1c42; }
-.topbar b { color: #0d1c42; font-weight: 700; }
-.on-dark { background: #081230; color: #f4f0e1; }
-.site-footer { background: #081230; color: #d9d3b9; }
-.site-footer h4, .site-footer .base a { color: #fcf9ea; }
-.btn { color: #0d1c42; }
-.btn:hover { color: #0d1c42; }
-.btn.ghost { color: #fcf9ea; }
-.btn.ghost:hover { background: #fcf9ea; color: #0d1c42; }
-.btn.light { background: #fcf9ea; border-color: #fcf9ea; color: #0d1c42; box-shadow: 4px 4px 0 #b8892d; }
-.btn.orange { color: #0d1c42; box-shadow: 4px 4px 0 #fcf9ea; }
-.aisle .num, .cta-band, .fifo div:first-child { color: #0d1c42; }
-.cta-band .btn { background: #0d1c42; border-color: #0d1c42; color: #fcf9ea; box-shadow: 4px 4px 0 #fcf9ea; }
-.timeline .when, .pending, .req, .results .start, .calc-extra .flag, .channel .code { color: #dbb35c; }
-.stage .chip, .ticket, .form, .crane, .video-frame, .snap, .results, .expiry > div { box-shadow-color: transparent; }
-.stage .chip { box-shadow: 3px 3px 0 #b8892d; }
-.ticket { box-shadow: 6px 6px 0 #b8892d; }
-.form { box-shadow: 8px 8px 0 #b8892d; }
-.crane { box-shadow: 6px 6px 0 #b8892d; border-color: #fcf9ea; }
-.video-frame { box-shadow: 8px 8px 0 #b8892d; }
-.video-caption { color: #fcf9ea; }
-.video-toggle { background: #0d1c42; color: #fcf9ea; border-color: #fcf9ea; }
-.carriers li { background: #fcf9ea; }
-.carriers .more { color: #5a6485; }
-.carriers { background: #2b3e72; }
-table.rate tbody tr:hover td { background: #1a3270; }
-.opts label:has(input:checked) { background: #1d3672; border-color: #b8892d; }
-.results .col.low { background: #18306b; }
-.form-msg.ok { background: #12392f; color: #fcf9ea; }
-.form-msg.err { background: #4a1d2a; color: #fcf9ea; }
-.field input, .field select, .field textarea, .admin td input { border-color: #4a5d92; }
-.carton > i.f::after {
-  background:
-    repeating-linear-gradient(90deg, #0d1c42 0 1px, transparent 1px 3px, #0d1c42 3px 5px, transparent 5px 6px) 6% 70% / 88% 34% no-repeat,
-    #fdfdfa;
-}
-.steel > i.t { background: #fcf9ea; }
-.steel > i.f, .steel > i.b { background: #e4dec2; }
-.steel > i.l, .steel > i.r { background: #b9b397; }
-.belt > i.t { background: repeating-linear-gradient(90deg, #2c4170 0 18px, #354b7c 18px 20px); background-size: 20px 100%; }
-.belt > i.f, .belt > i.b, .belt > i.l, .belt > i.r { background: #4a5f94; }
-.floor { border-color: rgba(252, 249, 234, .18); }
-.floor::before { background-image: linear-gradient(rgba(252,249,234,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(252,249,234,.1) 1px, transparent 1px); }
-.loader-bar span { background: #b8892d; }
+/* THEME: NAVY PRIMARY. Navy leads (text, buttons, bands, logo), cream page, gold accent. */
+.cta-band { background: #0d1c42; color: #fcf9ea; }
+.cta-band .btn { background: #b8892d; border-color: #b8892d; color: #0d1c42; box-shadow: 4px 4px 0 #fcf9ea; }
+.cta-band .btn.light { background: #fcf9ea; border-color: #fcf9ea; color: #0d1c42; box-shadow: 4px 4px 0 #b8892d; }
