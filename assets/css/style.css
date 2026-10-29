@@ -746,21 +746,28 @@ html.no-loader .loader { display: none; }
 .cta-band .btn { background: #b8892d; border-color: #b8892d; color: #0d1c42; box-shadow: 4px 4px 0 #fcf9ea; }
 .cta-band .btn.light { background: #fcf9ea; border-color: #fcf9ea; color: #0d1c42; box-shadow: 4px 4px 0 #b8892d; }
 
-/* CEO message (home page) */
-.ceo .split { grid-template-columns: .8fr 1.2fr; gap: 72px; align-items: center; }
-.ceo-photo { margin: 0; max-width: 420px; justify-self: center; width: 100%; }
-.ceo-photo img { display: block; width: 100%; height: auto; border: 2px solid #fcf9ea; box-shadow: 10px 10px 0 #b8892d; background: #13285d; }
-.ceo-photo figcaption { margin-top: 28px; font-family: var(--f-mono); font-size: 13px; letter-spacing: .05em; text-transform: uppercase; color: #dfd9c3; }
-.ceo-photo figcaption b { display: block; font-family: var(--f-head); font-size: 30px; font-weight: 700; letter-spacing: 0; text-transform: none; color: #fcf9ea; line-height: 1.1; margin-bottom: 4px; }
-.ceo-msg h2 { margin-bottom: 26px; }
-.ceo-msg blockquote { margin: 0; padding-left: 28px; border-left: 4px solid var(--orange); }
-.ceo-msg blockquote p { font-size: 19px; line-height: 1.65; margin: 0 0 18px; color: #f4f0e1; }
-.ceo-msg .sign { margin: 22px 0 0 32px; font-family: var(--f-head); font-size: 28px; font-weight: 600; color: var(--orange); }
-@media (max-width: 860px) { .ceo .split { grid-template-columns: 1fr; gap: 40px; } .ceo-photo { max-width: 340px; } }
-
-/* CDO card (under the CEO message) */
-.cdo { display: flex; align-items: center; gap: 30px; margin-top: 72px; padding-top: 44px; border-top: 1px solid #37466c; }
-.cdo img { display: block; width: 150px; height: auto; flex: none; border: 2px solid #fcf9ea; box-shadow: 6px 6px 0 #b8892d; background: #13285d; }
-.cdo b { display: block; font-family: var(--f-head); font-size: 32px; font-weight: 700; line-height: 1.1; color: #fcf9ea; margin-top: 6px; }
-.cdo .role { font-family: var(--f-mono); font-size: 13px; letter-spacing: .05em; text-transform: uppercase; color: #dfd9c3; }
-@media (max-width: 520px) { .cdo { gap: 20px; } .cdo img { width: 110px; } .cdo b { font-size: 26px; } }
+/* Leadership: CEO + CDO side by side at equal size, CEO message below */
+.leaders-head { text-align: center; margin-bottom: 56px; }
+.leaders-head .tag { justify-content: center; }
+.leaders-head h2 { margin: 0; }
+.leader-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 340px)); gap: 56px; justify-content: center; }
+.leader { margin: 0; }
+.leader img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border: 2px solid #fcf9ea; box-shadow: 8px 8px 0 #b8892d; background: #13285d; }
+.leader figcaption { margin-top: 26px; }
+.leader figcaption b { display: block; font-family: var(--f-head); font-size: 30px; font-weight: 700; line-height: 1.1; color: #fcf9ea; margin-bottom: 4px; }
+.leader figcaption span { font-family: var(--f-mono); font-size: 13px; letter-spacing: .05em; text-transform: uppercase; color: #dfd9c3; }
+.ceo-quote { max-width: 780px; margin: 80px auto 0; padding-top: 56px; border-top: 1px solid #37466c; }
+.ceo-quote h3 { font-size: clamp(30px, 3.6vw, 44px); margin: 0 0 24px; }
+.ceo-quote blockquote { margin: 0; padding-left: 28px; border-left: 4px solid var(--orange); }
+.ceo-quote blockquote p { font-size: 19px; line-height: 1.65; margin: 0 0 18px; color: #f4f0e1; }
+.ceo-quote .sign { margin: 22px 0 0 32px; font-family: var(--f-head); font-size: 28px; font-weight: 600; color: var(--orange); }
+@media (max-width: 620px) {
+  .leader-grid { gap: 18px; }
+  .leader img { box-shadow: 5px 5px 0 #b8892d; }
+  .leader figcaption { margin-top: 18px; }
+  .leader figcaption b { font-size: 21px; }
+  .leader figcaption span { font-size: 11px; }
+  .ceo-quote { margin-top: 56px; padding-top: 40px; }
+  .ceo-quote blockquote { padding-left: 18px; }
+  .ceo-quote .sign { margin-left: 22px; }
+}
