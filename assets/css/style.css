@@ -563,6 +563,13 @@ table.rate tbody tr:hover td { background: #fcfaf3; }
 .site-footer a { text-decoration: none; }
 .site-footer a:hover { color: var(--orange); }
 .site-footer .base a { color: var(--paper); text-decoration: underline; text-underline-offset: 3px; }
+/* Buttons in the footer keep their own colors. Without this, the footer link
+   hover color (gold) sticks after a tap on phones and the text vanishes into
+   the gold button. Navy text on gold also reads better than white. */
+.site-footer .btn.orange,
+.site-footer .btn.orange:hover,
+.site-footer .btn.orange:focus,
+.site-footer .btn.orange:active { color: var(--ink); background: var(--orange); border-color: var(--orange); box-shadow: 4px 4px 0 var(--paper); }
 .site-footer .base { margin-top: 48px; padding-top: 20px; border-top: 1px solid #213362; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-family: var(--f-mono); font-size: 12px; }
 @media (max-width: 760px) { .site-footer .cols { grid-template-columns: 1fr; } }
 
