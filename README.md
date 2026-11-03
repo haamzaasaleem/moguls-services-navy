@@ -35,7 +35,7 @@ The quote form, bundle form and calculator all post to `api/send.php`. That scri
 
 ## Warehouse animation
 
-The home page "Inside the warehouse" section is an animated scene drawn in SVG and CSS, with no video file: a forklift stocks the rack while cartons ride a conveyor, get labeled at a scan arch and leave through the outbound dock. It runs only while it is on screen, has a pause button, and shows a still frame for visitors with reduced motion turned on. The Variety Packs page has a video slot (`assets/video/grocery-pack.mp4`); until that file exists, the page shows its packing line animation instead.
+The home page "Inside the warehouse" section is an animated scene drawn in SVG and CSS, with no video file: a small warehouse where a worker shelves stock with a hand truck while boxes slide along a packing table, get scanned and labeled, and go out the roll-up door. It runs only while it is on screen, has a pause button, and shows a still frame for visitors with reduced motion turned on. The Variety Packs page has a video slot (`assets/video/grocery-pack.mp4`); until that file exists, the page shows its packing line animation instead.
 
 ## Run locally
 

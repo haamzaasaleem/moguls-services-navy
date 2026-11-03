@@ -224,86 +224,88 @@
 <section class="video-band" data-anim>
   <div class="wrap">
     <div class="video-frame">
-      <svg class="wh-scene" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Animated warehouse: a forklift stocks the racks while boxes ride a conveyor, get scanned and labeled, and leave through the loading dock.">
+      <svg class="wh-scene" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Animated small warehouse: a worker shelves stock with a hand truck while boxes slide along a packing table, get scanned and labeled, and go out the door.">
         <defs>
           <linearGradient id="wh-cone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fcf9ea" stop-opacity=".16"/><stop offset="1" stop-color="#fcf9ea" stop-opacity="0"/></linearGradient>
-          <g id="wh-carton"><rect x="0" y="-56" width="72" height="56" fill="#c9a56a" stroke="#8a6a35" stroke-width="2"/><rect x="30" y="-56" width="12" height="56" fill="#dcc082"/></g>
-          <g id="wh-stock"><rect x="0" y="-44" width="56" height="44" fill="#c9a56a" stroke="#8a6a35" stroke-width="2"/><rect x="23" y="-44" width="10" height="44" fill="#dcc082"/></g>
+          <g id="wh-carton"><rect x="0" y="-46" width="62" height="46" fill="#c9a56a" stroke="#8a6a35" stroke-width="2"/><rect x="26" y="-46" width="10" height="46" fill="#dcc082"/></g>
+          <g id="wh-stock"><rect x="0" y="-38" width="50" height="38" fill="#c9a56a" stroke="#8a6a35" stroke-width="2"/><rect x="20" y="-38" width="10" height="38" fill="#dcc082"/></g>
         </defs>
         <rect width="1600" height="900" fill="#12234f"/>
-        <path d="M0 160H1600M0 300H1600M0 440H1600" stroke="#182b5c" stroke-width="3"/>
+        <rect width="1600" height="160" fill="#0a1736"/>
+        <path d="M0 160H1600" stroke="#24386b" stroke-width="6"/>
         <rect y="640" width="1600" height="260" fill="#0a1736"/>
-        <path d="M0 700H1600" stroke="#b8892d" stroke-width="4" stroke-dasharray="40 30" opacity=".45"/>
+        <path d="M0 640H1600" stroke="#24386b" stroke-width="4"/>
         <g class="wh-lamps">
-          <polygon points="370,40 430,40 560,640 240,640" fill="url(#wh-cone)"/>
-          <polygon points="770,40 830,40 960,640 640,640" fill="url(#wh-cone)"/>
-          <rect x="360" y="20" width="80" height="22" fill="#fcf9ea"/><rect x="760" y="20" width="80" height="22" fill="#fcf9ea"/>
-          <path d="M400 0V20M800 0V20" stroke="#37466c" stroke-width="4"/>
+          <polygon points="470,190 530,190 680,640 320,640" fill="url(#wh-cone)"/>
+          <polygon points="870,190 930,190 1080,640 720,640" fill="url(#wh-cone)"/>
+          <path d="M500 160V176M900 160V176" stroke="#37466c" stroke-width="4"/>
+          <rect x="460" y="176" width="80" height="16" fill="#fcf9ea"/><rect x="860" y="176" width="80" height="16" fill="#fcf9ea"/>
         </g>
 
         <!-- step pills -->
         <g class="wh-pills" font-size="22">
-          <g><rect class="wh-p wh-p1" x="300" y="70" width="210" height="44" rx="22"/><text x="405" y="99">1  Receive</text></g>
-          <g><rect class="wh-p wh-p2" x="540" y="70" width="210" height="44" rx="22"/><text x="645" y="99">2  Rack</text></g>
-          <g><rect class="wh-p wh-p3" x="780" y="70" width="210" height="44" rx="22"/><text x="885" y="99">3  Label</text></g>
-          <g><rect class="wh-p wh-p4" x="1020" y="70" width="210" height="44" rx="22"/><text x="1125" y="99">4  Ship</text></g>
+          <g><rect class="wh-p wh-p1" x="300" y="58" width="210" height="44" rx="22"/><text x="405" y="87">1  Receive</text></g>
+          <g><rect class="wh-p wh-p2" x="540" y="58" width="210" height="44" rx="22"/><text x="645" y="87">2  Shelve</text></g>
+          <g><rect class="wh-p wh-p3" x="780" y="58" width="210" height="44" rx="22"/><text x="885" y="87">3  Label</text></g>
+          <g><rect class="wh-p wh-p4" x="1020" y="58" width="210" height="44" rx="22"/><text x="1125" y="87">4  Ship</text></g>
         </g>
 
-        <!-- pallet rack -->
+        <!-- two small shelving units -->
         <g class="wh-rack">
-          <rect x="214" y="180" width="500" height="10" fill="#916e24"/>
-          <rect x="214" y="320" width="500" height="10" fill="#916e24"/>
-          <rect x="214" y="460" width="500" height="10" fill="#916e24"/>
-          <use href="#wh-stock" x="240" y="180"/><use href="#wh-stock" x="306" y="180"/><use href="#wh-stock" x="420" y="180"/><use href="#wh-stock" x="486" y="180"/><use href="#wh-stock" x="600" y="180"/>
-          <use href="#wh-stock" x="240" y="320"/><use href="#wh-stock" x="420" y="320"/><use href="#wh-stock" x="486" y="320"/><use href="#wh-stock" x="552" y="320"/><use href="#wh-stock" x="618" y="320"/>
-          <use href="#wh-stock" x="306" y="460"/><use href="#wh-stock" x="420" y="460"/><use href="#wh-stock" x="600" y="460"/>
-          <g class="wh-slot"><use href="#wh-stock" x="240" y="460"/></g>
-          <rect x="214" y="150" width="12" height="490" fill="#b8892d"/><rect x="394" y="150" width="12" height="490" fill="#b8892d"/><rect x="574" y="150" width="12" height="490" fill="#b8892d"/><rect x="702" y="150" width="12" height="490" fill="#b8892d"/>
+          <path d="M246 380H404M246 470H404M246 560H404M426 380H584M426 470H584M426 560H584" stroke="#b8892d" stroke-width="8"/>
+          <use href="#wh-stock" x="256" y="376"/><use href="#wh-stock" x="318" y="376"/><use href="#wh-stock" x="436" y="376"/><use href="#wh-stock" x="500" y="376"/>
+          <use href="#wh-stock" x="256" y="466"/><use href="#wh-stock" x="436" y="466"/><use href="#wh-stock" x="500" y="466"/>
+          <use href="#wh-stock" x="436" y="556"/><use href="#wh-stock" x="500" y="556"/><use href="#wh-stock" x="340" y="636"/>
+          <g class="wh-slot"><use href="#wh-stock" x="290" y="556"/></g>
+          <path d="M248 360V640M402 360V640M428 360V640M582 360V640" stroke="#fcf9ea" stroke-width="6"/>
         </g>
 
-        <!-- forklift: drives in, lifts a carton to the shelf, backs out -->
+        <!-- worker with a hand truck -->
         <g class="wh-fork">
-          <g class="wh-lift"><rect x="146" y="618" width="76" height="10" fill="#8a6a35"/><g class="wh-carry"><use href="#wh-stock" x="156" y="618"/></g><path d="M138 628H226" stroke="#fcf9ea" stroke-width="6"/></g>
-          <rect x="128" y="470" width="10" height="164" fill="#fcf9ea"/>
-          <path d="M20 640V560H70L92 512H128V640Z" fill="#b8892d"/>
-          <path d="M70 560L92 512H118V560Z" fill="#0a1736" opacity=".55"/>
-          <rect x="54" y="490" width="78" height="8" fill="#fcf9ea"/><path d="M58 498V560M128 498V512" stroke="#fcf9ea" stroke-width="6"/>
-          <circle cx="50" cy="640" r="20" fill="#0d1c42" stroke="#fcf9ea" stroke-width="5"/><circle cx="108" cy="640" r="20" fill="#0d1c42" stroke="#fcf9ea" stroke-width="5"/>
+          <path d="M128 520L192 512" stroke="#e0ac82" stroke-width="12" stroke-linecap="round"/>
+          <path d="M88 600L78 636M116 600L130 636" stroke="#0d1c42" stroke-width="16" stroke-linecap="round"/>
+          <rect x="80" y="500" width="46" height="104" rx="12" fill="#0d1c42"/><rect x="90" y="502" width="26" height="100" rx="6" fill="#b8892d"/><rect x="90" y="556" width="26" height="5" fill="#fcf9ea"/>
+          <rect x="97" y="482" width="12" height="20" fill="#e0ac82"/><circle cx="103" cy="466" r="20" fill="#e0ac82"/><path d="M83 463a20 20 0 0 1 40 0q-20-11-40 0z" fill="#2b1d14"/>
+          <path d="M188 500L214 634H262" fill="none" stroke="#fcf9ea" stroke-width="6" stroke-linecap="round"/>
+          <use href="#wh-stock" x="212" y="630"/><g class="wh-carry"><use href="#wh-stock" x="212" y="592"/></g>
+          <circle cx="214" cy="636" r="12" fill="#0d1c42" stroke="#fcf9ea" stroke-width="4"/>
         </g>
 
-        <!-- loading dock -->
+        <!-- roll-up door -->
         <g class="wh-dock">
-          <rect x="1230" y="300" width="190" height="340" fill="#060d22"/>
-          <rect x="1250" y="390" width="150" height="250" fill="#0b1638" stroke="#24386b" stroke-width="3"/>
-          <path d="M1230 300H1420V350H1230Z" fill="#24386b"/><path d="M1230 316H1420M1230 333H1420" stroke="#12234f" stroke-width="3"/>
-          <rect x="1214" y="300" width="16" height="340" fill="#b8892d"/><rect x="1420" y="300" width="16" height="340" fill="#b8892d"/>
-          <path d="M1214 320l16-16M1214 360l16-16M1214 400l16-16M1214 440l16-16M1214 480l16-16M1214 520l16-16M1214 560l16-16M1214 600l16-16M1420 320l16-16M1420 360l16-16M1420 400l16-16M1420 440l16-16M1420 480l16-16M1420 520l16-16M1420 560l16-16M1420 600l16-16" stroke="#0d1c42" stroke-width="7"/>
-          <text class="wh-sign" x="1325" y="282" font-size="24">OUTBOUND</text>
-          <circle class="wh-led" cx="1325" cy="368" r="8"/>
+          <rect x="1250" y="330" width="190" height="310" fill="#060d22"/>
+          <rect x="1250" y="330" width="190" height="90" fill="#24386b"/><path d="M1250 350H1440M1250 372H1440M1250 394H1440" stroke="#12234f" stroke-width="3"/>
+          <rect x="1236" y="322" width="14" height="318" fill="#b8892d"/><rect x="1440" y="322" width="14" height="318" fill="#b8892d"/>
+          <text class="wh-sign" x="1345" y="306" font-size="22">OUTBOUND</text>
+          <circle class="wh-led" cx="1345" cy="440" r="8"/>
         </g>
 
-        <!-- conveyor -->
+        <!-- packer standing behind the table -->
+        <g class="wh-packer">
+          <rect x="872" y="432" width="60" height="116" rx="14" fill="#0d1c42"/><rect x="886" y="434" width="32" height="112" rx="7" fill="#b8892d"/><rect x="886" y="490" width="32" height="5" fill="#fcf9ea"/>
+          <rect x="895" y="412" width="14" height="22" fill="#8d5a3b"/><circle cx="902" cy="394" r="22" fill="#8d5a3b"/><path d="M880 391a22 22 0 0 1 44 0q-22-12-44 0z" fill="#111"/>
+        </g>
+
+        <!-- packing table with rollers -->
         <g class="wh-belt">
-          <path d="M460 600V640M640 600V640M820 600V640M1000 600V640M1180 600V640" stroke="#37466c" stroke-width="10"/>
-          <rect x="430" y="556" width="830" height="44" rx="22" fill="#1d2e58" stroke="#fcf9ea" stroke-width="3"/>
-          <path class="wh-run" d="M452 578H1238" stroke="#4b5c8c" stroke-width="8" stroke-dasharray="16 24"/>
+          <path d="M680 554V640M1150 554V640" stroke="#37466c" stroke-width="10"/>
+          <rect x="640" y="540" width="560" height="16" fill="#1d2e58" stroke="#fcf9ea" stroke-width="3"/>
+          <path class="wh-run" d="M650 548H1190" stroke="#4b5c8c" stroke-width="6" stroke-dasharray="16 24"/>
         </g>
 
-        <!-- cartons on the belt; each gets its label at the scanner -->
+        <!-- boxes on the table; each gets its label when scanned -->
         <g class="wh-boxes">
-          <g class="wh-box" style="animation-delay:0s"><use href="#wh-carton" x="440" y="556"/><g class="wh-lbl" style="animation-delay:0s"><rect x="448" y="530" width="22" height="16" fill="#fff"/><path d="M451 533v10M455 533v10M458 533v10M463 533v10M466 533v10" stroke="#0d1c42" stroke-width="1.6"/></g></g>
-          <g class="wh-box" style="animation-delay:-2s"><use href="#wh-carton" x="440" y="556"/><g class="wh-lbl" style="animation-delay:-2s"><rect x="448" y="530" width="22" height="16" fill="#fff"/><path d="M451 533v10M455 533v10M458 533v10M463 533v10M466 533v10" stroke="#0d1c42" stroke-width="1.6"/></g></g>
-          <g class="wh-box" style="animation-delay:-4s"><use href="#wh-carton" x="440" y="556"/><g class="wh-lbl" style="animation-delay:-4s"><rect x="448" y="530" width="22" height="16" fill="#fff"/><path d="M451 533v10M455 533v10M458 533v10M463 533v10M466 533v10" stroke="#0d1c42" stroke-width="1.6"/></g></g>
-          <g class="wh-box" style="animation-delay:-6s"><use href="#wh-carton" x="440" y="556"/><g class="wh-lbl" style="animation-delay:-6s"><rect x="448" y="530" width="22" height="16" fill="#fff"/><path d="M451 533v10M455 533v10M458 533v10M463 533v10M466 533v10" stroke="#0d1c42" stroke-width="1.6"/></g></g>
-          <g class="wh-box" style="animation-delay:-8s"><use href="#wh-carton" x="440" y="556"/><g class="wh-lbl" style="animation-delay:-8s"><rect x="448" y="530" width="22" height="16" fill="#fff"/><path d="M451 533v10M455 533v10M458 533v10M463 533v10M466 533v10" stroke="#0d1c42" stroke-width="1.6"/></g></g>
-          <g class="wh-box" style="animation-delay:-10s"><use href="#wh-carton" x="440" y="556"/><g class="wh-lbl" style="animation-delay:-10s"><rect x="448" y="530" width="22" height="16" fill="#fff"/><path d="M451 533v10M455 533v10M458 533v10M463 533v10M466 533v10" stroke="#0d1c42" stroke-width="1.6"/></g></g>
+          <g class="wh-box" style="animation-delay:0s"><use href="#wh-carton" x="650" y="540"/><g class="wh-lbl" style="animation-delay:0s"><rect x="656" y="518" width="20" height="14" fill="#fff"/><path d="M659 521v8M663 521v8M666 521v8M670 521v8M673 521v8" stroke="#0d1c42" stroke-width="1.5"/></g></g>
+          <g class="wh-box" style="animation-delay:-3s"><use href="#wh-carton" x="650" y="540"/><g class="wh-lbl" style="animation-delay:-3s"><rect x="656" y="518" width="20" height="14" fill="#fff"/><path d="M659 521v8M663 521v8M666 521v8M670 521v8M673 521v8" stroke="#0d1c42" stroke-width="1.5"/></g></g>
+          <g class="wh-box" style="animation-delay:-6s"><use href="#wh-carton" x="650" y="540"/><g class="wh-lbl" style="animation-delay:-6s"><rect x="656" y="518" width="20" height="14" fill="#fff"/><path d="M659 521v8M663 521v8M666 521v8M670 521v8M673 521v8" stroke="#0d1c42" stroke-width="1.5"/></g></g>
+          <g class="wh-box" style="animation-delay:-9s"><use href="#wh-carton" x="650" y="540"/><g class="wh-lbl" style="animation-delay:-9s"><rect x="656" y="518" width="20" height="14" fill="#fff"/><path d="M659 521v8M663 521v8M666 521v8M670 521v8M673 521v8" stroke="#0d1c42" stroke-width="1.5"/></g></g>
         </g>
 
-        <!-- scan and label arch -->
+        <!-- packer's arm and handheld scanner -->
         <g class="wh-arch">
-          <path class="wh-beam" d="M856 476V556" stroke="#f3c45a" stroke-width="6"/>
-          <path d="M816 600V462H896V600" fill="none" stroke="#fcf9ea" stroke-width="10"/>
-          <rect x="836" y="440" width="40" height="22" fill="#b8892d"/>
+          <path d="M880 450L866 470" stroke="#8d5a3b" stroke-width="13" stroke-linecap="round"/>
+          <path class="wh-beam" d="M870 474L870 492" stroke="#f3c45a" stroke-width="5"/>
+          <rect x="856" y="460" width="28" height="14" rx="3" fill="#fcf9ea" stroke="#0d1c42" stroke-width="2"/>
         </g>
       </svg>
       <div class="video-caption">

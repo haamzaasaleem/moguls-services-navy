@@ -742,11 +742,10 @@ html.no-loader .loader { display: none; }
 .wh-p2 { animation-delay: -6s; } .wh-p3 { animation-delay: -4s; } .wh-p4 { animation-delay: -2s; }
 .wh-box { animation: wh-box 12s linear infinite; }
 .wh-lbl { opacity: 0; animation: wh-lbl 12s linear infinite; }
-.wh-run { animation: wh-run .45s linear infinite; }
-.wh-beam { opacity: .15; animation: wh-beam 2s linear infinite; }
-.wh-led { fill: #2f7a4a; animation: wh-led 2s linear infinite; }
+.wh-run { animation: wh-run .77s linear infinite; }
+.wh-beam { opacity: 0; animation: wh-beam 3s linear infinite; }
+.wh-led { fill: #2f7a4a; animation: wh-led 3s linear infinite; }
 .wh-fork { animation: wh-fork 8s ease-in-out infinite; }
-.wh-lift { animation: wh-lift 8s ease-in-out infinite; }
 .wh-carry { animation: wh-carry 8s linear infinite; }
 .wh-slot { opacity: 0; animation: wh-slot 8s linear infinite; }
 .video-frame.paused * { animation-play-state: paused !important; }
@@ -758,20 +757,19 @@ html.no-loader .loader { display: none; }
   .wh-pills { display: none; }
 }
 @keyframes wh-p { 0%, 24.9% { fill: #b8892d; } 25%, 100% { fill: #fcf9ea; } }
-@keyframes wh-box { 0% { transform: translateX(0); opacity: 0; } 3% { opacity: 1; } 88% { opacity: 1; } 90%, 100% { transform: translateX(780px); opacity: 0; } }
-@keyframes wh-lbl { 0%, 43.7% { opacity: 0; } 43.8%, 100% { opacity: 1; } }
+@keyframes wh-box { 0% { transform: translateX(0); opacity: 0; } 3% { opacity: 1; } 88% { opacity: 1; } 90%, 100% { transform: translateX(580px); opacity: 0; } }
+@keyframes wh-lbl { 0%, 29.2% { opacity: 0; } 29.3%, 100% { opacity: 1; } }
 @keyframes wh-run { to { stroke-dashoffset: -40; } }
-@keyframes wh-beam { 0%, 56% { opacity: .15; } 60%, 66% { opacity: 1; } 70%, 100% { opacity: .15; } }
-@keyframes wh-led { 0%, 58% { fill: #2f7a4a; } 62%, 72% { fill: #7fe3a0; } 76%, 100% { fill: #2f7a4a; } }
-@keyframes wh-fork { 0% { transform: translateX(0); } 15%, 55% { transform: translateX(84px); } 70%, 100% { transform: translateX(0); } }
-@keyframes wh-lift { 0%, 15% { transform: translateY(0); } 33%, 38% { transform: translateY(-158px); } 55%, 100% { transform: translateY(0); } }
-@keyframes wh-carry { 0%, 35.9% { opacity: 1; } 36%, 99.9% { opacity: 0; } 100% { opacity: 1; } }
-@keyframes wh-slot { 0%, 35.9% { opacity: 0; } 36%, 92% { opacity: 1; } 95%, 100% { opacity: 0; } }
+@keyframes wh-beam { 0%, 11% { opacity: 0; } 14%, 20% { opacity: 1; } 23%, 100% { opacity: 0; } }
+@keyframes wh-led { 0%, 48% { fill: #2f7a4a; } 52%, 60% { fill: #7fe3a0; } 64%, 100% { fill: #2f7a4a; } }
+@keyframes wh-fork { 0% { transform: translateX(0); } 18%, 48% { transform: translateX(78px); } 66%, 100% { transform: translateX(0); } }
+@keyframes wh-carry { 0%, 29.9% { opacity: 1; } 30%, 99.9% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes wh-slot { 0%, 29.9% { opacity: 0; } 30%, 92% { opacity: 1; } 95%, 100% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) {
   .wh-scene * { animation: none !important; }
   .wh-lbl, .wh-slot { opacity: 1; }
-  .wh-box:nth-child(1) { transform: translateX(80px); } .wh-box:nth-child(2) { transform: translateX(300px); }
-  .wh-box:nth-child(3) { transform: translateX(540px); } .wh-box:nth-child(n+4) { display: none; }
+  .wh-box:nth-child(1) { transform: translateX(40px); } .wh-box:nth-child(2) { transform: translateX(330px); }
+  .wh-box:nth-child(n+3) { display: none; }
   [data-anim] .video-toggle { display: none; }
 }
 
