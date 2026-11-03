@@ -33,9 +33,9 @@ Leave any price empty and the site shows "Price coming soon" or "Custom quote" i
 
 The quote form, bundle form and calculator all post to `api/send.php`. That script emails the submission to `quoteRecipient` from `data/settings.json`, with the customer's address set as Reply To. It uses PHP `mail()`, which most shared hosts support. Set `MM_FROM_EMAIL` in `api/config.php` (or in `config.local.php`) to an address on your own domain so the messages don't go to spam.
 
-## Warehouse video
+## Warehouse animation
 
-The home page shows a 16 second warehouse clip made from two Pexels stock videos. See `assets/video/README.md` for how to swap in your own footage. The clip plays muted on a loop, only while it is on screen, and has a pause button. The Variety Packs page has a second video slot (`assets/video/grocery-pack.mp4`); until that file exists, the page shows the 3D pack animation instead.
+The home page "Inside the warehouse" section is an animated scene drawn in SVG and CSS, with no video file: a forklift stocks the rack while cartons ride a conveyor, get labeled at a scan arch and leave through the outbound dock. It runs only while it is on screen, has a pause button, and shows a still frame for visitors with reduced motion turned on. The Variety Packs page has a video slot (`assets/video/grocery-pack.mp4`); until that file exists, the page shows its packing line animation instead.
 
 ## Run locally
 

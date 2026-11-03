@@ -266,6 +266,33 @@
     });
   }
 
+  /* ---------- home page animated warehouse: runs only while on screen ---------- */
+  function scene() {
+    document.querySelectorAll("[data-anim]").forEach(function (band) {
+      var frame = band.querySelector(".video-frame");
+      var btn = band.querySelector(".video-toggle");
+      var userPaused = false;
+      function set(paused) {
+        frame.classList.toggle("paused", paused);
+        btn.textContent = userPaused ? "Play" : "Pause";
+      }
+      btn.addEventListener("click", function () {
+        userPaused = !userPaused;
+        set(userPaused);
+      });
+      if ("IntersectionObserver" in window) {
+        new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) frame.classList.add("in");
+            set(userPaused || !e.isIntersecting);
+          });
+        }, { threshold: 0.2 }).observe(band);
+      } else {
+        frame.classList.add("in");
+      }
+    });
+  }
+
   /* ---------- menu ---------- */
   function menu() {
     var btn = document.querySelector(".menu-btn");
@@ -363,6 +390,7 @@
     loader();
     promo();
     video();
+    scene();
     menu();
     reveal();
     tilt();
