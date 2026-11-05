@@ -65,10 +65,6 @@ The 3D effects use CSS 3D transforms only, with no WebGL library:
 
 All motion stops for visitors who have reduced motion turned on in their system settings.
 
-## WordPress conversion
+## WordPress theme
 
-When the design is final:
-
-* The header and footer become `header.php` and `footer.php`. Each page becomes a page template.
-* `data/prices.json` and `data/settings.json` move to an options page in the WordPress dashboard. The front end script can read the same JSON shape from a small REST endpoint.
-* `api/send.php` becomes a `wp_mail` handler, so an SMTP plugin can deliver the email.
+The site is also available as a WordPress theme: `wordpress/moguls-services.zip`. See `wordpress/README.md` for installing it, where each setting lives, and how the forms send email.

@@ -123,7 +123,7 @@
         m.appendChild(el("b", null, M(x.per * x.qty)));
       } else if (x.per == null) {
         var a = el("a", null, "Ask for this rate");
-        a.href = "quote.html";
+        a.href = MM.link("quote");
         m.appendChild(a);
       }
       col.appendChild(m);

@@ -16,7 +16,17 @@
     }, obj);
   };
 
+  // On WordPress the theme prints the data into the page (window.MM_DATA);
+  // the static site reads the JSON files instead.
+  var WP = window.MM_DATA || null;
+
+  // Link to another page: WordPress permalink, or the static .html file.
+  MM.link = function (name) {
+    return (WP && WP.urls && WP.urls[name]) || name + ".html";
+  };
+
   function load(name) {
+    if (WP && WP[name]) return Promise.resolve(WP[name]);
     return fetch("data/" + name + ".json?t=" + Date.now(), { cache: "no-store" }).then(function (r) {
       if (!r.ok) throw new Error(name + " " + r.status);
       return r.json();
@@ -101,7 +111,7 @@
         var td = el("td", null);
         td.colSpan = 2;
         var a = el("a", null, "Custom quote");
-        a.href = "quote.html";
+        a.href = MM.link("quote");
         td.appendChild(a);
         tr.appendChild(td);
         fbm.appendChild(tr);
@@ -119,7 +129,7 @@
           td.textContent = MM.bundleText(b.price);
         } else {
           var a = el("a", null, "Custom quote");
-          a.href = "quote.html";
+          a.href = MM.link("quote");
           td.appendChild(a);
         }
         tr.appendChild(td);
@@ -341,9 +351,14 @@
     });
   }
 
-  /* ---------- forms: every submission goes to api/send.php ---------- */
+  /* ---------- forms: every submission goes to api/send.php (WordPress: admin-ajax) ---------- */
   MM.send = function (formData) {
-    return fetch("api/send.php", { method: "POST", body: formData }).then(function (r) {
+    var url = "api/send.php";
+    if (WP) {
+      url = WP.ajaxUrl;
+      formData.append("action", "mm_send");
+    }
+    return fetch(url, { method: "POST", body: formData }).then(function (r) {
       return r.json().catch(function () { return { ok: false }; });
     });
   };

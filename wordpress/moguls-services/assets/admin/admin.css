@@ -1,0 +1,22 @@
+/* Moguls Settings page in the WordPress dashboard */
+.mm-admin { max-width: 980px; }
+.mm-admin fieldset { background: #fff; border: 1px solid #c3c4c7; border-radius: 4px; padding: 16px 20px 20px; margin: 0 0 20px; }
+.mm-admin legend { font-size: 15px; font-weight: 600; padding: 0 6px; }
+.mm-admin .hint { color: #50575e; margin: 0 0 12px; }
+.mm-admin .field { margin: 0 0 12px; }
+.mm-admin .field label { display: block; font-weight: 600; margin-bottom: 4px; }
+.mm-admin .field input { width: 100%; max-width: 100%; }
+.mm-admin .grid2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 20px; }
+.mm-admin .table-scroll { overflow-x: auto; }
+.mm-admin table { border-collapse: collapse; width: 100%; margin-bottom: 8px; }
+.mm-admin th { text-align: left; font-weight: 600; padding: 6px 6px 6px 0; white-space: nowrap; }
+.mm-admin td { padding: 4px 6px 4px 0; }
+.mm-admin td input { width: 100%; min-width: 80px; }
+.mm-admin button.x, .mm-admin button.add { cursor: pointer; }
+.mm-admin button.x { background: none; border: 0; color: #b32d2e; text-decoration: underline; }
+.mm-admin button.add { margin-top: 4px; }
+.mm-admin .savebar { position: sticky; bottom: 0; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; background: #f0f0f1; padding: 14px 0; border-top: 1px solid #c3c4c7; }
+.mm-admin .form-msg { font-weight: 600; }
+.mm-admin .form-msg.ok { color: #1a7f37; }
+.mm-admin .form-msg.err { color: #b32d2e; }
+@media (max-width: 782px) { .mm-admin .grid2 { grid-template-columns: 1fr; } }

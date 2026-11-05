@@ -1,0 +1,14 @@
+/*
+Theme Name: Moguls Services
+Theme URI: https://mogulsservices.com
+Author: Cybersia Labs
+Author URI: https://cybersialabs.com
+Description: Theme for Marketplace Moguls Services, a 3PL warehouse in Bolingbrook, IL. Prices, contact details and the form email are edited under Moguls Settings in the dashboard; logos, home page text and leadership are edited in Appearance > Customize.
+Version: 1.0.0
+Requires at least: 6.0
+Requires PHP: 7.4
+License: Proprietary
+Text Domain: moguls
+*/
+
+/* The site styles live in assets/css/style.css and are loaded by functions.php. */
