@@ -9,10 +9,10 @@ if (file_exists(__DIR__ . '/config.local.php')) {
 }
 
 // Where form submissions go if data/settings.json has no valid quoteRecipient.
-if (!defined('MM_TO_EMAIL')) define('MM_TO_EMAIL', 'haamzaasaleem@gmail.com');
+if (!defined('MM_TO_EMAIL')) define('MM_TO_EMAIL', 'info@mogulsservices.com');
 
 // Sender address for outgoing mail. Use an address on your own domain.
-if (!defined('MM_FROM_EMAIL')) define('MM_FROM_EMAIL', 'website@marketplacemogulsservices.com');
+if (!defined('MM_FROM_EMAIL')) define('MM_FROM_EMAIL', 'info@mogulsservices.com');
 
 // Empty password means the admin page cannot save anything.
 if (!defined('MM_ADMIN_PASSWORD')) define('MM_ADMIN_PASSWORD', '');
